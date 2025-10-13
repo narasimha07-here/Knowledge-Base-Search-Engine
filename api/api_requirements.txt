@@ -21,3 +21,4 @@ aiofiles
 sqlalchemy
 pydantic[email]
 requests
+pydantic_models
