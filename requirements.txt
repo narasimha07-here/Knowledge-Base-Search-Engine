@@ -18,13 +18,7 @@ pandas
 argon2-cffi
 python-jose[cryptography]
 aiofiles
-uuid
-typing
-datetime
 sqlalchemy
 pydantic[email]
-pathlib
-hashlib
-sqlite3
 streamlit
 requests
