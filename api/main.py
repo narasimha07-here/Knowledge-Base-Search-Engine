@@ -13,7 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 load_dotenv()
 
-from .pydantic_models import (
+from pydantic_models import (
     UserCreate,
     UserResponse,
     GenericResponse,
@@ -25,9 +25,9 @@ from .pydantic_models import (
     UserStats,
     HybridResult,
 )
-from .db_utils import DbManager
-from .chroma_utils import VectorStore
-from .langchain_utils import LLMManager
+from db_utils import DbManager
+from chroma_utils import VectorStore
+from langchain_utils import LLMManager
 from langchain_core.documents import Document
 
 logging.basicConfig(level=logging.INFO)
@@ -48,13 +48,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-DB_PATH = os.getenv("DB_PATH", "app.db")
-UPLOAD_DIR = Path(os.getenv("UPLOAD_DIR", "./uploads"))
+DB_PATH = os.getenv("DBPATH")
+UPLOAD_DIR = Path(os.getenv("UPLOADDIR"))
 UPLOAD_DIR.mkdir(exist_ok=True, parents=True)
 MAX_FILE_SIZE = int(os.getenv("MAX_FILE_SIZE", str(1000 * 1024 * 1024)))  
 
 db = DbManager(DB_PATH)
-vs = VectorStore(persist_dir=os.getenv("VECTOR_DIR", ".vectordbs"), model=os.getenv("EMBED_MODEL", "BAAI/bge-small-en-v1.5"))
+vs = VectorStore(persist_dir=os.getenv("VECTORDIR"), model=os.getenv("EMBED_MODEL", "BAAI/bge-small-en-v1.5"))
 llm = LLMManager()
 
 

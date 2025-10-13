@@ -35,7 +35,8 @@ venv.bak
 app.db
 app.db-
 uploads/
-.vectordbs/
+.vectordbs
+mnt/
 *.log
 logs/
 .vscode/

@@ -14,8 +14,8 @@ load_dotenv()
 logger = logging.getLogger("vec")
 
 class VectorStore:
-    def __init__(self, persist_dir: str = ".vectordbs", model: str = "BAAI/bge-small-en-v1.5"):
-        self.persist_dir = Path(persist_dir)
+    def __init__(self, persist_dir: str, model: str):
+        self.persist_dir = Path(os.getenv("VECTORDIR"))
         self.persist_dir.mkdir(exist_ok=True, parents=True)
         
         self.embeddings = HuggingFaceEmbeddings(

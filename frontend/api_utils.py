@@ -3,7 +3,7 @@ import requests
 import streamlit as st
 from typing import Dict, Any, List, Optional
 
-API_BASE_URL = st.secrets.get("API_BASE_URL")
+API_BASE_URL = st.secrets.get("API_BASE_URL","http://localhost:8000")
 
 class APIError(Exception):
     def __init__(self, message, status_code=None):
