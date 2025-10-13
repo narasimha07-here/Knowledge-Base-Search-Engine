@@ -13,7 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 load_dotenv()
 
-from pydantic_models import (
+from .pydantic_models import (
     UserCreate,
     UserResponse,
     GenericResponse,
@@ -25,9 +25,9 @@ from pydantic_models import (
     UserStats,
     HybridResult,
 )
-from db_utils import DbManager
-from chroma_utils import VectorStore
-from langchain_utils import LLMManager
+from .db_utils import DbManager
+from .chroma_utils import VectorStore
+from .langchain_utils import LLMManager
 from langchain_core.documents import Document
 
 logging.basicConfig(level=logging.INFO)
