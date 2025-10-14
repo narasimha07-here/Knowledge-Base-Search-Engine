@@ -1,6 +1,6 @@
-fastapi==0.115.3
+fastapi
 
-uvicorn==0.22.0
+uvicorn
 
 langchain
 
@@ -18,28 +18,28 @@ langchain-core
 
 langchain_experimental
 
-pydantic==2.7.1
+pydantic
 
-pydantic[email]==2.7.1
+pydantic[email]
 
-python-multipart==0.0.12
+python-multipart
 
-numpy==1.26.5
+numpy
 
-python-dotenv==1.0.0
+python-dotenv
 
-PyPDF2==3.0.1
+PyPDF2
 
-pandas==2.0.3
+pandas
 
-argon2-cffi==21.3.0
+argon2-cffi
 
-python-jose[cryptography]==3.3.0
+python-jose[cryptography]
 
-aiofiles==23.1.0
+aiofiles
 
-sqlalchemy==2.0.20
+sqlalchemy
 
-requests==2.31.0
+requests
 
-streamlit==1.26.0
+streamlit
