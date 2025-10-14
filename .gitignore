@@ -48,5 +48,4 @@ htmlcov/
 .tox/
 .nox/
 .DS_Store
-venvv/
 home/
