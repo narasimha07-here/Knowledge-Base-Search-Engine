@@ -24,8 +24,6 @@ pydantic[email]==2.7.1
 
 python-multipart==0.0.12
 
-typing-extensions==4.11.0
-
 numpy==1.26.5
 
 python-dotenv==1.0.0
