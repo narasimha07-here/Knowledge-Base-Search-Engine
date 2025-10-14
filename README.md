@@ -2,6 +2,10 @@
 
 A full-stack RAG (Retrieval-Augmented Generation) search engine that lets users upload documents and search through them using natural language queries. Built with FastAPI backend and Streamlit frontend, deployed on Azure and Streamlit Cloud.
 
+## Demo Video
+
+[<img src="https://img.youtube.com/vi/7BujIyXD0Iw/maxresdefault.jpg" width="50%">](https://youtu.be/7BujIyXD0Iw)
+
 ## What It Does
 
 Ever wished you could just ask questions about your documents instead of manually searching through them? This knowledge base search engine does exactly that. Upload your PDFs, text files, or other documents, and then ask questions in plain English. The system uses AI to understand your question, find relevant information from your documents, and give you a synthesized answer.
