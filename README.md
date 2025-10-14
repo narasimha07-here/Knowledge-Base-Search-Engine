@@ -8,7 +8,7 @@ Ever wished you could just ask questions about your documents instead of manuall
 
 ## Tech Stack
 
-**Backend (FastAPI)**:
+**Backend (FastAPI)**: [API](https://ragapibuild.azurewebsites.net/docs)
 - **FastAPI**: Modern Python web framework for building APIs
 - **LangChain**: Framework for working with LLMs and document processing
 - **ChromaDB**: Vector database for storing document embeddings
