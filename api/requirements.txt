@@ -18,3 +18,4 @@ python-jose[cryptography]
 aiofiles
 sqlalchemy
 requests
+pysqlite3-binary
